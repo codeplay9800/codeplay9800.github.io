@@ -137,7 +137,6 @@ p {
 }
 
 #service,
-#quotes,
 footer {
   text-align: center;
 }
@@ -506,31 +505,21 @@ a:hover, a:active, a:focus {
     background: url('../images/quotes-bg.jpg') 50% 0 repeat-y fixed;
     background-size: cover;
     background-position: center center;
-    color: #ffffff;
     position: relative;
     padding: 100px 0px;
 }
 
 #quotes .overlay {
-    background: #121212;
+    background: white;
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
-    opacity: 0.7;
 }
 
-#quotes .fa {
-  font-size: 42px;
-  margin-top: 32px;
-  margin-bottom: 22px;
+#quotes a {
+  color: black !important;
 }
-
-#quotes p {
-  padding-top: 32px;
-}
-
-
 /*---------------------------------------
     Contact section              
 -----------------------------------------*/
@@ -616,11 +605,9 @@ footer {
 
 .social-icon {
     position: relative;
-    padding-top: 90px;
-    padding-right: 10px;
-    padding-bottom: 100px;
-    padding-left: 80px;
-    margin: 0;
+    padding-top: 20px;
+    padding-left: 0px;
+    margin: -30px;
     text-align: left;
     
 }
@@ -651,7 +638,7 @@ footer {
     background: #E3AE57;
     border-color: #ffffff;
     color: #ffffff;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 
