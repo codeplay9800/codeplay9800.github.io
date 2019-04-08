@@ -123,6 +123,7 @@ hr {
 #about,
 #service,
 #experience,
+#awards,
 #education,
 #contact {
   position: relative;
@@ -131,6 +132,7 @@ hr {
 #home .container,
 #about .container, 
 #experience .container,
+#awards .container,
 #service .container,
 #education .container,
 #contact .container {
@@ -140,6 +142,7 @@ hr {
 }
 
 #experience .experience-thumb,
+#awards .awards-thumb,
 #education .education-thumb  {
   padding: 22px 42px 42px 42px;
 }
@@ -150,6 +153,7 @@ footer {
 }
 
 #experience,
+#awards,
 #education {
   background: #E9724C;
 }
@@ -507,6 +511,28 @@ a:hover, a:active, a:focus {
 }
 
 
+/*---------------------------------------
+    Awards section              
+-----------------------------------------*/
+
+#awards .awards-img {
+  background: url('../images/SwedenVr.PNG') no-repeat;
+}
+
+#awards .media-heading {
+  margin-bottom: 0px;
+}
+
+#awards .media .fa {
+  font-size: 42px;
+  margin-right: 14px;
+}
+
+#awards small {
+  color: #633;
+  font-weight: bold;
+}
+
 
 /*---------------------------------------
    Quotes section              
@@ -689,6 +715,7 @@ footer {
   #home .container,
   #about .container, 
   #experience .container,
+  #awards .container,
   #service .container,
   #education .container,
   #contact .container {
@@ -698,6 +725,7 @@ footer {
 
   #about .col-md-3,
   #experience .col-md-6,
+  #awards .col-md-6,
   #education .col-md-6,
   #contact .col-md-3 {
     padding: 0;
