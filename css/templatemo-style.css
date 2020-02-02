@@ -156,7 +156,7 @@ footer {
 #experience,
 #awards,
 #education {
-  background: #E9724C;
+  background: #E9724C
 }
 
 .background-image {
@@ -182,6 +182,10 @@ footer {
 
 .bg-yellow {
   background: #E3AE57;
+}
+
+.bg-orange {
+  background: #E9724C;
 }
 
 .bg-white {
@@ -397,6 +401,8 @@ a:hover, a:active, a:focus {
    About section              
 -----------------------------------------*/
 
+
+
 #about .about-img {
     background: url('../images/about.jpg') no-repeat;
 }
@@ -418,16 +424,39 @@ a:hover, a:active, a:focus {
 }
 #about p {
   font-size: 20px;
+  line-height: 25px;
+}
+
+#about p2 {
+  font-size: 20px;
   line-height: 30px;
 }
+
 #about strong,
 #about span {
   font-weight: bold;
   display: inline-block;
   padding-bottom: 8px;
 }
+#about .about-thumb {
+  padding: 52px 22px 52px 22px;
+}
 
+#about .about-thumb .fa {
+  font-size: 42px;
+  padding-bottom: 22px;
+}
 
+#about .col-md-2 {
+  width: 15%;
+  padding: 0px;
+}
+
+#about h3{
+  font-size: 25px;
+  line-height: 25px;
+  padding-bottom: 2px;
+}
 
 /*---------------------------------------
     Service section              
