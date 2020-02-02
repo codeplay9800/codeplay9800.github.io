@@ -481,11 +481,11 @@ a:hover, a:active, a:focus {
   padding-bottom: 22px;
 }
 
-#service .col-md-3 {
+/* #service .col-md-3 {
   width: 20%;
   padding: 0px;
 }
-
+*/
 img {
   width: 300px;
   height: 200px;
@@ -500,11 +500,12 @@ img {
   line-height:0;
   max-width: 50
 }
+/*
 #service h4{
   font-size: 16px;
   line-height: 1.15;
   padding-bottom: 6px;
-}
+} */
 
 /*---------------------------------------
     Experience section              
