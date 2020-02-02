@@ -42,7 +42,7 @@
     function initParallax() {
     $('#home').parallax("100%", 0.1);
     $('#about').parallax("100%", 0.3);
-    $('#service').parallax("100%", 0.2);
+    $('#project').parallax("100%", 0.2);
     $('#experience').parallax("100%", 0.3);
     $('#education').parallax("100%", 0.1);
     $('#quotes').parallax("100%", 0.3);
