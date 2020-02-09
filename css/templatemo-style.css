@@ -445,7 +445,7 @@ background: url('../images/about.jpg') no-repeat;
 
 #about .about-thumb .fa {
   font-size: 42px;
-  padding-bottom: 22px;
+  padding-bottom: 10px;
 }
 
 #about h3{
@@ -459,7 +459,8 @@ background: url('../images/about.jpg') no-repeat;
 -----------------------------------------*/
 
 #project {
-  background: #E9724C;
+  background: #ffffff;
+  /* background: #E9724C; */
 }
 
 #project p {
@@ -495,14 +496,6 @@ img {
   padding: 0px;
   line-height:0;
   max-width: 50
-}
-
-#project .col-md-3 {
-  display: table; /* Make the container element behave like a table */
-}
-
-#project .col {
-  display: table-cell; /* Make elements inside the container behave like table cells */
 }
 
 /*
