@@ -445,6 +445,18 @@ background: url('../images/about.jpg') no-repeat;
   padding-bottom: 2px;
 } 
 
+#about .equal {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#about .img-responsive
+{
+  padding: 0px;
+  line-height:0;
+  max-width: 500
+}
+
 /*---------------------------------------
     project section              
 -----------------------------------------*/
@@ -482,6 +494,11 @@ background: url('../images/about.jpg') no-repeat;
   padding: 0px;
   line-height:0;
   max-width: 50
+}
+
+#project .equal {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 
