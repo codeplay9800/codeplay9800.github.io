@@ -39,6 +39,13 @@ body {
     flex-grow: 1;
 }
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 
 /*---------------------------------------
     Typorgraphy              
@@ -163,7 +170,7 @@ hr {
 #awards .container,
 #project .container,
 #education .container,
-#contact .container {
+#contact .container #projectPage .container {
     width: 100%;
     padding: 0;
     margin: 0;
@@ -791,6 +798,54 @@ footer {
     border-color: #ffffff;
     color: #ffffff;
     transform: scale(1.05);
+}
+
+
+/*---------------------------------------
+    ProjectPage section              
+-----------------------------------------*/
+
+#projectPage {
+    padding-top: 4cm;
+}
+
+#projectPage .project-img {
+    /* background-image: url('../images/5.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    height: auto%;
+}
+
+#projectPage .project-img1 {
+    /* background-image: url('../images/5.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    /* border: 1px solid red; */
+    width: 80%;
+    height: auto;
+}
+
+#projectPage .project-img2 {
+    /* background-image: url('../images/5.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    border: 1px solid red;
+    width: 20%;
+    height: 50%;
+}
+
+#projectPage .project-img3 {
+    /* background-image: url('../images/5.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    border: 1px solid red;
+    width: 20%;
+    height: 50%;
 }
 
 
