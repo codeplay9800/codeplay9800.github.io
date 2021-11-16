@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="templatemo">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>Shubham Sharma</title>
+    <!--
+Stimulus Template
+http://www.templatemo.com/tm-498-stimulus
+-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+
+</head>
+
+<body data-spy="scroll" data-offset="50">
+
+
+    <!-- PRE LOADER -->
+
+    <div class="preloader">
+        <div class="spinner">
+            <span class="spinner-rotate"></span>
+        </div>
+    </div>
+
+
+    <!-- Navigation Section -->
+
+    <div class="navbar navbar-fixed-top custom-navbar" role="navigation">
+        <div class="row">
+            <div class="container">
+                <!-- navbar header -->
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+               </button>
+                    <a href="#" class="navbar-brand"></a>
+                </div>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html#home" class="smoothScroll">Home</a></li>
+                        <li><a href="index.html#project" class="smoothScroll">Projects</a></li>
+                        <li><a href="index.html#about" class="smoothScroll">About Me</a></li>
+                        <li><a href="index.html#experience" class="smoothScroll">Experiences</a></li>
+                        <li><a href="https://drive.google.com/file/d/1NgIRenXM4rWpZQ64sgNbpb2JnVWPmhKz/view?usp=sharing" class="smoothScroll">CV</a></li>
+                        <!--   <li><a href="#contact" class="smoothScroll">Contact</a></li>-->
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Main Section -->
+
+    <section id="projectPage">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <img class="project-img1" src="./images/Projects/565/WebGL2.gif">
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <img class="project-img1" src="./images/Projects/565/BlinnSpecular.gif">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <img class="project-img1" src="./images/Projects/565/Normal.png">
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <img class="project-img1" src="./images/Projects/565/Position.png">
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12">
+                <div class="home-thumb">
+                    <div class="section-title">
+                        <h1 class="wow fadeInUp" data-wow-delay="0.6s"> <strong>WebGL Forward+ and Clustered Deferred Shading</strong></h1>
+                        <h2 class="wow fadeInUp" data-wow-delay="0.9s">WebGL, GLSL</h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.12s"> This project highlights the performance differences between Forward, Forward+ clustered and Deferred clustered shading schemes.
+
+                            <li>Forward : Implementation of Forward shading in this project has been updated to calculate the visible object Mesh once and iterating through all the lights in the scene to shade the visible mesh or vertices.</li>
+                            <li>Forward+ : The Scene is divided into tiled frustum clusters, which expand along the X, Y and Z axes. The Scene objects are shaded only iterating through the lights which affect them or the lights which affect the clusters in
+                                which the object lies in.</li>
+                            <li>Deferred Clustered : This required multiple passes of the OpenGL draw pipeline. Scene information is stored as G Buffers in the first pass and the scene is shaded using the same cluster methodology as Forward+ Shading.</li>
+                            <!-- <a href="#about" class="wow fadeInUp smoothScroll section-btn btn btn-success" data-wow-delay="1.4s">Get Started</a> -->
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- SCRIPTS -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.parallax.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
