@@ -72,30 +72,27 @@ http://www.templatemo.com/tm-498-stimulus
 
     <section id="projectPage">
         <div class="container">
+
+            <h1 class="wow fadeInUp" data-wow-delay="0.6s"> <strong>CUDA FLocking</strong></h1>
             <div class="row">
                 <div class="col-md-6 col-sm-6">
-                    <img class="project-img1" src="./images/Projects/565/dof.png">
+                    <img class="project-img1" src="./images/Projects/565/Flocking.gif">
                 </div>
                 <div class="col-md-6 col-sm-6">
-                    <img class="project-img1" src="./images/Projects/565/xyzdragon.png">
-                </div>
-            </div>
-            <div class="row">
-                <div class="center">
-                    <img class="project-img1" src="./images/Projects/565/Refractive.png">
+                    <img class="project-img1" src="./images/Projects/565/Flocking2.gif">
                 </div>
             </div>
             <br>
             <div class="col-md-12 col-sm-12">
                 <div class="home-thumb">
                     <div class="section-title">
-                        <h1 class="wow fadeInUp" data-wow-delay="0.6s"> <strong>Monte Carlo Path Tracer</strong></h1>
-                        <h2 class="wow fadeInUp" data-wow-delay="0.9s">CUDA, OpenGL</h2>
-                        <p class="wow fadeInUp" data-wow-delay="0.12s"> Path tracing is a computer graphics Monte Carlo method of rendering images of three-dimensional scenes such that the global illumination is faithful to reality.
-                            <br>
-                            <b>Features</b> <br> Kernel with BSDF Evaluation, Uniform diffuse,Perfect specular reflective (mirror), specular refractive (Fresnel dielectric), Path Continuation/Termination with Stream Compaction, Toggleable Sorting of ray
-                            Paths by material type, Toggleable first bounce intersection cache to be used by subsequent iterations, Anti-aliasing rays with sub-pixel samples, Arbitrary OBJ Mesh Loading with toggleable 7 Plane Bounding Volume intersection
-                            culling, Camera depth of field, Procedural Structure, Procedural Texture, Subsurface Scattering (In Progress) </p>
+                        <h2 class="wow fadeInUp" data-wow-delay="0.9s">C++, CUDA, OpenGL</h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.12s"> This project is based on Based on Conard Parker's notes on <a href="http://www.vergenet.net/~conrad/boids/pseudocode.html"> Boids Flocking</a> with slight adaptations Boids move according to three rules. These were implemented
+                            across threads to allow for a level of parallelism across GPU cores.
+                            <li>Boids try to fly towards the centre of mass of neighboring boids.</li>
+                            <li> Boids try to keep a small distance away from other objects (including other boids).</li>
+                            <li> Boids try to match velocity with near boids.</li>
+                        </p>
                         <!-- <a href="#about" class="wow fadeInUp smoothScroll section-btn btn btn-success" data-wow-delay="1.4s">Get Started</a> -->
                     </div>
 
