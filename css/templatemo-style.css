@@ -557,10 +557,20 @@ a:focus {
 
 #experience .experience-img {
     background: url('../images/experience-img.jpg') no-repeat;
-    height: 310px;
+    /* height: 310px; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#experience .col-container {
+    display: flex;
+    width: 100%;
+}
+
+#experience .col {
+    flex: 1;
+    padding: 16px;
 }
 
 #experience .media-heading {
@@ -588,7 +598,7 @@ a:focus {
 
 #education .education-img {
     background: url('../images/education-img.jpg') no-repeat;
-    height: 300px;
+    height: 310px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -885,6 +895,8 @@ footer {
     #contact .container {
         padding-right: 15px;
         padding-left: 15px;
+        /* display: flex;
+        width: 100%; */
     }
     #about .col-md-3,
     #experience .col-md-6,
@@ -893,11 +905,12 @@ footer {
     #contact .col-md-3 {
         padding: 0;
         margin: 0;
+        /* flex: 1; */
     }
-    .background-image {
+    /* .background-image {
         position: relative;
         min-height: 65vh;
-    }
+    } */
 }
 
 @media only screen and (max-width: 1024px) {
