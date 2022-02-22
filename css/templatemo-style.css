@@ -237,27 +237,23 @@ footer {
 
 /* } */
 
-@media only screen and (min-width: 400px) {
+@media (min-width: 400px) {
     #project .background-image1 {
         background: var(--imgsrc) no-repeat;
         background-position: 50% 50% !important;
         background-size: cover !important;
-        width: auto;
-        margin: auto;
-        max-width: 50%;
-        height: 20vh;
-        max-height: 40vh;
+        width: 50%;
+        height: 40vh;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
 #project .background-image1 {
     /* background: url('../images/Projects/565/xyzdragon.png') no-repeat; */
-    background: var(--imgsrc) no-repeat;
-    background-position: 50% 50% !important;
+    background-image: var(--imgsrc) no-repeat;
+    background-size: 150px;
     background-size: cover !important;
-    width: 30vh;
-    height: 30vh;
-    margin: auto
 }
 
 #experience .experience-img {
