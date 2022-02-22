@@ -249,6 +249,17 @@ footer {
     }
 }
 
+@media (max-width: 768px) {
+    #project .background-image1 {
+        background: var(--imgsrc) no-repeat;
+        background-position: 50% 50% !important;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 50vh;
+        margin: auto;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     #project .background-image1 {
         /* background: url('../images/Projects/565/xyzdragon.png') no-repeat; */
@@ -257,6 +268,7 @@ footer {
         background-size: cover;
         background-repeat: no-repeat;
         height: 50vh;
+        margin: auto;
     }
 }
 
