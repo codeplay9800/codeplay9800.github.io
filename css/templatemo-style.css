@@ -237,18 +237,18 @@ footer {
 
 /* } */
 
-@media (min-width: 768px) {
-    #project .background-image1 {
-        background: var(--imgsrc) no-repeat;
-        background-position: 50% 50% !important;
-        background-size: cover !important;
-        width: 50%;
-        height: 40vh;
-        margin-left: auto;
-        margin-right: auto;
-    }
+#project .background-image1 {
+    background: var(--imgsrc) no-repeat;
+    background-position: 50% 50% !important;
+    background-size: cover !important;
+    width: 50%;
+    height: 40vh;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+
+/* 
 @media (max-width: 768px) {
     #project .background-image1 {
         background: var(--imgsrc) no-repeat;
@@ -258,7 +258,7 @@ footer {
         height: 50vh;
         margin: auto;
     }
-}
+} */
 
 @media only screen and (max-width: 768px) {
     #project .background-image1 {
