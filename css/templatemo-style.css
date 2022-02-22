@@ -238,7 +238,8 @@ footer {
 /* } */
 
 #project .background-image1 {
-    background: var(--imgsrc) no-repeat;
+    /* background: var(--imgsrc) no-repeat; */
+    background: url('../images/Projects/565/xyzdragon.png') no-repeat;
     background-position: 50% 50% !important;
     background-size: cover !important;
     width: 50%;
