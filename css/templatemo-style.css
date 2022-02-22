@@ -208,9 +208,17 @@ footer {
 
 :root {
     /* image from an external URL (PNG in this case) */
-    --image-from-somewhere: url('../images/Projects/565/xyzdragon.png');
+    --image-xyzdragon: url('../images/Projects/565/xyzdragon.png');
     /* image from embedded data (SVG in this case) */
-    --image-embedded: url('../images/Projects/565/ForwardDeferred.PNG');
+    --image-ForwardDeferred: url('../images/Projects/565/ForwardDeferred.PNG');
+    --image-Flocking: url('../images/Projects/565/Flocking.gif ');
+    --image-mountains: url('../images/Projects/560/perlin-mountains.png');
+    --image-CurveeRotation3: url('../images/Projects/562/CurveeRotation3.gif');
+    --image-KineMatics_IK: url('../images/Projects/562/KineMatics_IK.gif');
+    --image-herM: url('../images/herM.PNG');
+    --image-phantomLimb: url('../images/phantomLimb.PNG');
+    --image-hapNav: url('../images/HapNav.PNG');
+    --image-wildforecast: url('../images/wildforecast.PNG');
 }
 
 #project .background-image1 {
