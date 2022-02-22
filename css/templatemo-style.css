@@ -206,6 +206,34 @@ footer {
     left: 0;
 }
 
+:root {
+    /* image from an external URL (PNG in this case) */
+    --image-from-somewhere: url('../images/Projects/565/xyzdragon.png');
+    /* image from embedded data (SVG in this case) */
+    --image-embedded: url('../images/Projects/565/ForwardDeferred.PNG');
+}
+
+#project .background-image1 {
+    /* background: url('../images/Projects/565/xyzdragon.png') no-repeat; */
+    background: var(--imgsrc) no-repeat;
+    background-position: 50% 50% !important;
+    background-size: cover !important;
+    width: 50%;
+    height: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#experience .experience-img {
+    background: url('../images/experience-img.jpg') no-repeat;
+    /* height: 310px; */
+    background-position: 50% 50%;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    width: 100%;
+    height: 75vh;
+}
+
 .color-white {
     color: #ffffff;
 }
@@ -558,9 +586,11 @@ a:focus {
 #experience .experience-img {
     background: url('../images/experience-img.jpg') no-repeat;
     /* height: 310px; */
-    background-position: center;
-    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    /* background-repeat: no-repeat; */
     background-size: cover;
+    width: 100%;
+    height: 75vh;
 }
 
 #experience .col-container {
