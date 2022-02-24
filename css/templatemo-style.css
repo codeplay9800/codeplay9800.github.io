@@ -267,7 +267,8 @@ footer {
         background-position: 50% 50% !important;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 50vh;
+        width: 99%;
+        max-height: 30vh;
         margin: auto;
     }
 }
