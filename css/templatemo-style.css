@@ -219,6 +219,7 @@ footer {
     --image-phantomLimb: url('images/phantomLimb.PNG');
     --image-hapNav: url('images/HapNav.PNG');
     --image-wildforecast: url('images/wildforecast.PNG');
+    --image-environment: url('images/Maya/Environment.jpg');
 }
 
 
@@ -247,19 +248,6 @@ footer {
     margin-right: auto;
 }
 
-
-/* 
-@media (max-width: 768px) {
-    #project .background-image1 {
-        background: var(--imgsrc) no-repeat;
-        background-position: 50% 50% !important;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 50vh;
-        margin: auto;
-    }
-} */
-
 @media only screen and (max-width: 768px) {
     #project .background-image1 {
         /* background: url('../images/Projects/565/xyzdragon.png') no-repeat; */
@@ -271,6 +259,11 @@ footer {
         max-height: 30vh;
         margin: auto;
     }
+}
+
+#project .img {
+    width: 100%;
+    object-fit: contain;
 }
 
 #experience .experience-img {
