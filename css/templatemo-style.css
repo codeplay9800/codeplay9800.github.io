@@ -215,6 +215,8 @@ footer {
     --image-mountains: url('images/Projects/560/perlin-mountains.png');
     --image-CurveeRotation3: url('images/Projects/562/CurveeRotation3.gif');
     --image-KineMatics_IK: url('images/Projects/562/KineMatics_IK.gif');
+    --image-PBR1: url('images/Projects/561/physically-based-shaders-point-lights/Renders/R2_2.JPG');
+    --image-PBR2: url('images/Projects/561/physically-based-shaders-environment-maps/lucy/1.jpg');
     --image-herM: url('images/herM.PNG');
     --image-phantomLimb: url('images/phantomLimb.PNG');
     --image-hapNav: url('images/HapNav.PNG');
@@ -928,6 +930,57 @@ footer {
     border: 1px solid red;
     width: 20%;
     height: 50%;
+}
+
+
+/* Ensure images are responsive */
+
+#projectPage .project-img4 {
+    width: 100%;
+    display: block;
+}
+
+#projectPage .title-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* Image container for overlay text */
+
+#projectPage .image-container {
+    text-align: center;
+    /* Centers the text above the image */
+    margin-bottom: 10px;
+    /* Adds spacing between images */
+}
+
+
+/* Specular text overlay */
+
+#projectPage .image-text {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    z-index: 1;
+    /* Ensures the text appears above the image */
+    text-align: center;
+    white-space: nowrap;
+}
+
+#projectPage .image-caption {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5px;
+    /* Space between text and image */
 }
 
 
