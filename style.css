@@ -139,6 +139,7 @@
   .hero-container {
     width: 100%;
     margin: 4rem 0;
+    display: flex;
   }
   
   .hero-wrapper {
@@ -148,18 +149,36 @@
     gap: 2rem;
   }
   
+  .profile-image, .hero-about {
+    flex: 1; /* Makes both sections take equal width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .profile-image {
-    flex: 1;
-    max-width: 50%;
+      position: relative;
+      overflow: hidden; /* Prevents overflow issues */
+      border-radius: 8px;
   }
-  
+
   .profile-image img {
-    width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    border-radius: 8px;
-    border: 5px solid var(--secondary-dark);
+      width: 100%;
+      height: 100%; /* Ensures it stretches to match the section */
+      object-fit: cover; /* Maintains aspect ratio while covering the container */
+      border-radius: 8px;
+      border: 5px solid var(--secondary-dark);
   }
+
+  #particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    pointer-events: all; /* Ensure interactions work */
+}
   
   .hero-about {
     flex: 1;
@@ -372,12 +391,12 @@
     height: 100%;
   }
   
-  .carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
+ .carousel-item img {
+  width: 100%;         /* Ensure the image spans the entire width */
+  height: 100%;        /* Ensure the image spans the entire height */
+  object-fit: contain; /* Preserve aspect ratio, show the whole image */
+  object-position: center; /* Ensure the image is centered */
+}
   .carousel-controls {
     position: absolute;
     bottom: 20px;

@@ -134,4 +134,31 @@ document.addEventListener('DOMContentLoaded', function() {
       slideInterval = setInterval(goToNextSlide, slideDelay);
     }
   }
-  
+
+  particlesJS("particles-js", {
+    "particles": {
+        "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+        "color": { "value": "#E3AE57" },
+        "shape": { "type": "circle" },
+        "opacity": { "value": 0.7 },
+        "size": { "value": 2, "random": true },
+        "line_linked": { "enable": true, "distance": 150, "color": "#E3AE57", "opacity": 0.4, "width": 1 },
+        "move": { "enable": true, "speed": 2 }
+    },
+    "interactivity": {
+        "detect_on": "canvas",  // Ensure this is set to "canvas"
+        "events": {
+            "onhover": { "enable": true, "mode": "grab" }, // Hover interaction
+            "onclick": { "enable": true, "mode": "push" }, // Click interaction
+            "resize": true
+        },
+        "modes": {
+            "grab": { "distance": 150, "line_linked": { "opacity": 1 } },
+            "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 },
+            "repulse": { "distance": 200, "duration": 0.4 },
+            "push": { "particles_nb": 4 },
+            "remove": { "particles_nb": 2 }
+        }
+    },
+    "retina_detect": true
+});
