@@ -10,6 +10,7 @@
     --card-bg: #1e1e1e;
     --maya-bg: #2a2a2a;
     --hover-glow: 0 0 15px rgba(157, 219, 208, 0.5);
+    --hero-bg: #f5f0e8;
   }
   
   * {
@@ -24,8 +25,14 @@
     color: var(--text-color);
     line-height: 1.6;
     padding-top: 60px; /* Added to account for fixed header */
+    font-family: 'Source Sans Pro', sans-serif;
   }
   
+  @font-face {
+    font-family: SpecialHeadingFont;
+    src: url(sansation_light.woff);
+}
+
   .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -75,7 +82,7 @@
   
   /* Header Styles */
   header {
-    padding: 1.5rem 0;
+    padding: 0.8rem 0;
     position: fixed; /* Make header fixed */
     top: 0;
     left: 0;
@@ -92,14 +99,14 @@
   }
   
   .header-title h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--accent-color);
     font-weight: 700;
     margin-bottom: 0.5rem;
   }
   
   .header-title p {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     opacity: 0.8;
   }
   
@@ -160,6 +167,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: var(--hero-bg);
   }
 
   .profile-image {
