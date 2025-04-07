@@ -11,6 +11,13 @@
     --maya-bg: #2a2a2a;
     --hover-glow: 0 0 15px rgba(157, 219, 208, 0.5);
     --hero-bg: #f5f0e8;
+    --white: #ffffff;
+    --peach: #E3AE57;
+    --orange: #E3AE57;
+    --maroon: #633;
+    --writing-gray: #888;
+    --header-gray: #666666;
+    --orange: #E9724C
   }
   
   * {
@@ -22,6 +29,7 @@
   
   body {
     background-color: var(--primary-dark);
+    /* background-color: var(--orange); */
     color: var(--text-color);
     line-height: 1.6;
     padding-top: 60px; /* Added to account for fixed header */
@@ -167,7 +175,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: var(--hero-bg);
   }
 
   .profile-image {
@@ -198,7 +205,7 @@
   
   .hero-about {
     flex: 1;
-    background-color: var(--footer-bg);
+    background-color: var(--hero-bg);
     color: var(--footer-text);
     padding: 2rem;
     border-radius: 8px;
@@ -320,6 +327,21 @@
   
   .arrow-icon {
     font-size: 1.2rem;
+  }
+
+  .bullet-paragraph {
+    line-height: 1.6;
+    color: #ccc;
+    font-size: 0.95rem;
+  }
+
+  .unstyled-link {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .unstyled-link:hover {
+    text-decoration: underline; /* optional hover effect */
   }
   
   /* Publications and Awards Section */

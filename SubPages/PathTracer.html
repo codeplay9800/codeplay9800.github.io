@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PathTracer - Shubham Sharma</title>
+  <meta name="description" content="PathTracer project by Shubham Sharma">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="project-detail-page">
+
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="header-title">
+          <h1>Shubham Sharma</h1>
+          <p>Graphics Engineer</p>
+        </div>
+        <div class="social-links">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="resume-btn">Resume <i class="fas fa-download"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container container-top">
+
+    <!-- Back Button - Updated to match the reference image -->
+    <a href="index.html" class="back-button">
+      <i class="fas fa-chevron-left"></i> Go Back
+    </a>
+    
+    <!-- Project Header -->
+    <div class="project-header">
+      <h2>PathTracer</h2>
+      <img src="../images/Projects/565/xyzdragon.png" alt="PathTracer" class="project-banner">
+    </div>
+    
+
+    <!-- Project Info Grid -->
+    <div class="project-detail-grid">
+      <!-- About Section -->
+      <!-- <div class="detail-card">
+        <h3>About</h3>
+        <p>Bug Shooter initially started as a gradable assignment for a FutureGames course. Afterwards, I kept working on the project, adding a second spatial data structure to compare the results and a background generator by using the Wave Function Collapse algorithm.</p>
+      </div> -->
+
+      <!-- Project Info Section -->
+      <div class="detail-card">
+        <h3>Project Info</h3>
+        <!-- <div class="info-item">
+          <i class="fas fa-user"></i>
+          <p>Role: Gameplay Programmer</p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-users"></i>
+          <p>Team Size: 1</p>
+        </div>
+        <div class="info-item">
+          <i class="far fa-clock"></i>
+          <p>Time frame: 6 Weeks</p>
+        </div> -->
+        <div class="info-item">
+          <i class="fas fa-code"></i>
+          <p>CUDA C++</p>
+        </div>
+        <div class="info-item">
+          <a href="https://github.com/codeplay9800/Project3-CUDA-Path-Tracer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <p><a href="https://github.com/codeplay9800/Project3-CUDA-Path-Tracer" class="unstyled-link">Github Link</a></p>
+          </div>
+      </div>
+    </div>
+
+    <!-- Introduction Section -->
+    <section class="project-section">
+      <h3>Introduction</h3>
+      <p>Path tracing is a computer graphics Monte Carlo method of rendering images of three-dimensional scenes such that the global illumination is faithful to reality. <strong>ECS</strong> in C++, focusing on <strong>optimization</strong> and getting a better understanding of the Performance Profiler in Visual Studio.</p>
+      <h4>Features</h4>
+      <p class="bullet-paragraph">
+        •	Shading Kernel with BSDF Evaluation<br>
+        •	Uniform diffuse<br>
+        •	Perfect specular reflective (mirror)<br>
+        •	specular refractive (Fresnel dielectric)<br>
+        •	Path Continuation/Termination with Stream Compaction<br>
+        •	Toggleable Sorting of ray Paths by material type<br>
+        •	Toggleable first bounce intersection cache to be used by subsequent iterations<br>
+        •	Anti-aliasing rays with sub-pixel samples<br>
+        •	Arbitrary OBJ Mesh Loading with toggleable 7 Plane Bounding Volume intersection culling<br>
+        •	Camera depth of field<br>
+        •	Procedural Structure<br>
+        •	Procedural texture<br>
+        •	Subsurface Scattering (In Progress)
+      </p>
+      <h5>Checkout GitHub Repository For More Information!</h5>
+      <h5><a href="https://github.com/codeplay9800/Project3-CUDA-Path-Tracer" class="unstyled-link">Github Link</a></h5>
+    </section>
+
+    <section class="project-section">
+        <div class="comparison-images">
+          <figure>
+            <img src="../images/Projects/565/dof.png" alt="Depth Of Field">
+            <figcaption>Depth of Field Effect utilising focal distance and lens radius parameters</figcaption>
+          </figure>
+        </div>
+        <div class="comparison-images">
+            <figure>
+              <img src="../images/Projects/565/ProcTexture.png" alt="Procedural Textures">
+              <figcaption>Simple Sinusoidal and Cosine functions, combination of noise functions like Perlin, FBM and Worley to generate procedural textures.</figcaption>
+            </figure>
+        </div>
+        <div class="comparison-images">
+            <figure>
+              <img src="../images/Projects/565/Refractive.png" alt="Refractive Material">
+              <figcaption>Compound Reflective and Refractive impact executed through a Fresnel fabric.</figcaption>
+            </figure>
+        </div>
+    </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+        <p>© 2025 Shubham Sharma. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

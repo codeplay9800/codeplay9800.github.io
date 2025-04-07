@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bug Shooter - Tomas Wallin</title>
+  <meta name="description" content="Bug Shooter project by Tomas Wallin, a game programmer specializing in systems and gameplay programming.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="project-detail-page">
+
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="header-title">
+          <h1>Tomas Wallin</h1>
+          <p>Gameplay Programmer</p>
+        </div>
+        <div class="social-links">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="resume-btn">Resume <i class="fas fa-download"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container container-top">
+
+    <!-- Back Button - Updated to match the reference image -->
+    <a href="index.html" class="back-button">
+      <i class="fas fa-chevron-left"></i> Go Back
+    </a>
+    
+    <!-- Project Header -->
+    <div class="project-header">
+      <h2>Bug Shooter</h2>
+      <img src="public/lovable-uploads/43e05e42-f7fe-442d-84c1-0525f6e2601f.png" alt="Bug Shooter Game" class="project-banner">
+    </div>
+    
+
+    <!-- Project Info Grid -->
+    <div class="project-detail-grid">
+      <!-- About Section -->
+      <div class="detail-card">
+        <h3>About</h3>
+        <p>Bug Shooter initially started as a gradable assignment for a FutureGames course. Afterwards, I kept working on the project, adding a second spatial data structure to compare the results and a background generator by using the Wave Function Collapse algorithm.</p>
+      </div>
+
+      <!-- Project Info Section -->
+      <div class="detail-card">
+        <h3>Project Info</h3>
+        <div class="info-item">
+          <i class="fas fa-user"></i>
+          <p>Role: Gameplay Programmer</p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-users"></i>
+          <p>Team Size: 1</p>
+        </div>
+        <div class="info-item">
+          <i class="far fa-clock"></i>
+          <p>Time frame: 6 Weeks</p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-code"></i>
+          <p>Engine: SDL 2 (C++)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Introduction Section -->
+    <section class="project-section">
+      <h3>Introduction</h3>
+      <p>This space shooter game was a fun and challenging project for me, where I had the opportunity to work on creating my own <strong>ECS</strong> in C++, focusing on <strong>optimization</strong> and getting a better understanding of the Performance Profiler in Visual Studio.</p>
+      <p>In order to gain a better understanding of procedural generation, I wanted to build a background generator using the <strong>wave function collapse</strong> algorithm. I decided on the wave function collapse algorithm because it appealed the most to me, and it can be used in a variety of ways.</p>
+    </section>
+
+    <!-- Wave Function Collapse Section -->
+    <section class="project-section">
+      <h3>Wave Function Collapse (WFC)</h3>
+      <p>I want to clarify that my version of the wave function collapse algorithm does not use a reference image or perform overlap checking to generate unique tiles and assign weights based on their frequency in the image. Instead, I started small and created a simple implementation that uses a set of predefined rules to determine which tiles can be placed next to each other.</p>
+      <p><a href="#" class="code-link">Code - Wave Function Collapse <i class="fas fa-external-link-alt"></i></a></p>
+    </section>
+
+    <!-- Spatial Hash vs Quadtree Section -->
+    <section class="project-section">
+      <h3>Spatial Hash vs Quadtree</h3>
+      <p>My game was already running smooth, but I wanted to see if I could do even better by switching to another spatial data structure. I decided to additionally add a quadtree to compare the frames between it and the spatial hash that I was already using.</p>
+      <p>In my very simple unscientific tests, I found that the game had more fps when using the quadtree with 35k moving entities, but that the spatial hash was slightly better when the entities stood still. This made me believe that the cause has to do with the remove/insert implementation difference between the two structures.</p>
+      
+      <div class="comparison-images">
+        <figure>
+          <img src="public/lovable-uploads/0ebe8d84-a180-4fcb-a73a-2592f7f49d34.png" alt="Spatial Hash Performance">
+          <figcaption>Using 35k moving entities to compare the performance between a Spatial Hash (left) and a Quadtree (right).</figcaption>
+        </figure>
+      </div>
+      
+      <p>I believe the performance difference between the spatial hash and quadtree structures in my game is due to the complexity of their insert and remove functions. The spatial hash has O(n^2) complexity for both insert and remove, while the quadtree has O(log n) complexity for both. These functions are called frequently when entities update their positions, so their complexity can significantly impact the game's performance. I believe that either structure could be used in a game, depending on the specific needs and requirements of the project. It's even possible to use both structures in the same game, depending on the circumstances.</p>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Tomas Wallin. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
