@@ -20,17 +20,128 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // After animation completes, navigate to the project detail page
         setTimeout(() => {
-          window.location.href = 'project-detail.html';
+          window.location.href = 'SubPages/PathTracer.html';
+        }, 500);
+      }
+
+      // if (projectId === 'PathTracer') {
+      //   // Start transition animation
+      //   pageTransition.classList.add('slide-in');
+      //   card.classList.add('slide-out');
+        
+      //   // After animation completes, navigate to the project detail page
+      //   setTimeout(() => {
+      //     window.location.href = 'SubPages/PathTracer.html';
+      //   }, 500);
+      // }
+
+      // if (projectId === 'CurveEditor') {
+      //   // Start transition animation
+      //   pageTransition.classList.add('slide-in');
+      //   card.classList.add('slide-out');
+        
+      //   // After animation completes, navigate to the project detail page
+      //   setTimeout(() => {
+      //     window.location.href = 'SubPages/CurveEditor.html';
+      //   }, 500);
+      // }
+
+      // if (projectId === 'DeferredShading') {
+      //   // Start transition animation
+      //   pageTransition.classList.add('slide-in');
+      //   card.classList.add('slide-out');
+        
+      //   // After animation completes, navigate to the project detail page
+      //   setTimeout(() => {
+      //     window.location.href = 'SubPages/DeferredShading.html';
+      //   }, 500);
+      // }
+
+      // if (projectId === 'Minecraft') {
+      //   // Start transition animation
+      //   pageTransition.classList.add('slide-in');
+      //   card.classList.add('slide-out');
+        
+      //   // After animation completes, navigate to the project detail page
+      //   setTimeout(() => {
+      //     window.location.href = 'SubPages/Minecraft.html';
+      //   }, 500);
+      // }
+
+      // if (projectId === 'Flocking') {
+      //   // Start transition animation
+      //   pageTransition.classList.add('slide-in');
+      //   card.classList.add('slide-out');
+        
+      //   // After animation completes, navigate to the project detail page
+      //   setTimeout(() => {
+      //     window.location.href = 'SubPages/Flocking.html';
+      //   }, 500);
+      // }
+
+      // if (projectId === 'Kinematics') {
+      //   // Start transition animation
+      //   pageTransition.classList.add('slide-in');
+      //   card.classList.add('slide-out');
+        
+      //   // After animation completes, navigate to the project detail page
+      //   setTimeout(() => {
+      //     window.location.href = 'SubPages/Kinematics.html';
+      //   }, 500);
+      // }
+
+      // if (projectId === 'PBR_PointLight') {
+      //   // Start transition animation
+      //   pageTransition.classList.add('slide-in');
+      //   card.classList.add('slide-out');
+        
+      //   // After animation completes, navigate to the project detail page
+      //   setTimeout(() => {
+      //     window.location.href = 'SubPages/PBR_PointLight.html';
+      //   }, 500);
+      // }
+
+      // if (projectId === 'PBR_EnvironmentMaps') {
+      //   // Start transition animation
+      //   pageTransition.classList.add('slide-in');
+      //   card.classList.add('slide-out');
+        
+      //   // After animation completes, navigate to the project detail page
+      //   setTimeout(() => {
+      //     window.location.href = 'SubPages/PBR_EnvironmentMaps.html';
+      //   }, 500);
+      // }
+      const projectIds = ['PathTracer', 'CurveEditor', 'DeferredShading', 'Minecraft', 'Flocking', 'Kinematics', 'PBR_PointLight', 'PBR_EnvironmentMaps'];
+
+      if (projectIds.includes(projectId)) {
+        // Start transition animation
+        pageTransition.classList.add('slide-in');
+        card.classList.add('slide-out');
+        
+        // After animation completes, navigate to the project detail page
+        setTimeout(() => {
+          window.location.href = `SubPages/${projectId}.html`;
         }, 500);
       }
     });
   });
 
   // Handle back navigation with animation if coming from project page
-  if (document.referrer.includes('project-detail.html')) {
+  // if (document.referrer.includes('SubPages/PathTracer.html')){
+  //   pageTransition.classList.add('slide-out');
+  //   setTimeout(() => {
+  //     pageTransition.classList.remove('slide-out');
+  //   }, 500);
+  // }
+  const projectIds = ['PathTracer', 'CurveEditor', 'DeferredShading', 'Minecraft', 'Flocking', 'Kinematics', 'PBR_PointLight', 'PBR_EnvironmentMaps'];
+
+  // Handle back navigation with animation if coming from project page
+  if (projectIds.some(id => document.referrer.includes(`SubPages/${id}.html`))) {
     pageTransition.classList.add('slide-out');
     setTimeout(() => {
       pageTransition.classList.remove('slide-out');
+      // const projectId = projectIds.find(id => document.referrer.includes(`SubPages/${id}.html`));
+      // window.location.href = `index.html#${projectId}`;
     }, 500);
   }
 

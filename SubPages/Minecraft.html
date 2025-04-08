@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minecraft Project - Shubham Sharma</title>
+  <meta name="description" content="Minecraft project by Shubham Sharma">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="project-detail-page">
+
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="header-title">
+          <h1>Shubham Sharma</h1>
+          <p>Graphics Engineer</p>
+        </div>
+        <div class="social-links">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="resume-btn">Resume <i class="fas fa-download"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container container-top">
+
+    <!-- Back Button -->
+    <a href="../index.html#Minecraft" class="back-button">
+      <i class="fas fa-chevron-left"></i> Go Back
+    </a>
+    
+    <!-- Project Header -->
+    <div class="project-header">
+      <h2>Minecraft Project</h2>
+      <img src="../images/Projects/minecraft-project.png" alt="Minecraft Project" class="project-banner">
+    </div>
+    
+
+    <!-- Project Info Grid -->
+    <div class="project-detail-grid">
+      <!-- Project Info Section -->
+      <div class="detail-card">
+        <h3>Project Info</h3>
+        <div class="info-item">
+          <i class="fas fa-code"></i>
+          <p>OpenGL, C++</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Introduction Section -->
+    <section class="project-section">
+      <h3>Overview</h3>
+      <p>This project is a team effort to create a Minecraft-like game with various features such as terrain rendering, procedural generation, and player physics.</p>
+    </section>
+
+    <!-- Features Section -->
+    <section class="project-section">
+      <h3>Features by: Shubham Sharma</h3>
+      <h4>Efficient Terrain Rendering and Chunking</h4>
+      <p class="bullet-paragraph">
+        • Interleaved VBOs for faster rendering<br>
+        • Larger buffers for multiple objects<br>
+        • Optimized algorithm for creation of terrain mesh
+      </p>
+      <h4>L-Systems</h4>
+      <p class="bullet-paragraph">
+        • Modular L-System generator<br>
+        • Parsed string based on input parameters like axiom, rules, and probability<br>
+        • Rule class for determining axiom expansion
+      </p>
+      <h4>Shadow Mapping</h4>
+      <p class="bullet-paragraph">
+        • Real-time shadow mapping using depth shader<br>
+        • Addressed issues like shadow acne and Peter Panning<br>
+        • Poisson sampling with 64-element kernel for anti-aliasing
+      </p>
+      <h4>Water Waves</h4>
+      <p class="bullet-paragraph">
+        • Gerstner waves-inspired vertex shader<br>
+        • Blinn-Phong reflection model for calculating water reflections
+      </p>
+      <h4>Post-process Camera Overlay</h4>
+      <p class="bullet-paragraph">
+        • Post-processing water shader using Gaussian blur and FBM noise<br>
+        • Lava processing shader using FBM noise and vignette effects
+      </p>
+      <h4>Procedural Buildings with Shape Grammars</h4>
+      <p class="bullet-paragraph">
+        • L-Systems-based procedural building generation<br>
+        • Random expansion rule
+        </p>
+        </section>
+   <!-- Other Features Section -->
+   <section class="project-section">
+    <h3>Other Features</h3>
+    <p class="bullet-paragraph">
+      • Procedural Terrain Generation (Viktoria Braun): Grassy hills biome using Worley noise and fractal Brownian motion, and mountains biome using Perlin noise.<br>
+      • Player Physics (Manni Arora): Player movements, jumping, and collision detection using grid marching and ray casting.<br>
+      • Multithreaded Terrain Generation (Manni Arora): Multithreaded terrain generation, using mutexes to ensure parallel threads don't access shared memory simultaneously.<br>
+      • Texturing and Texture Animation (Viktoria Braun): Texture support, chunk helper, and texture animations for blocks like lava and water.<br>
+      • Day and Night Cycle (Viktoria Braun): Procedural sky, sun movement, and terrain shader adjustments for a day-night cycle.<br>
+      • Additional Biomes (Viktoria Braun): Mesa and riverlands biomes, using Perlin noise and smoothstep functions.<br>
+      • Color Image as Height Map (Manni Arora): Using color images as height maps, incorporating multithreading for quick terrain rendering.<br>
+      • Distance Fog (Manni Arora): Distance fog, interpolating between fog color and original terrain color based on vertex distance.<br>
+      • Sounds (Manni Arora): Background bird sounds, block addition and removal sounds, and splash sounds for player interactions.<br>
+      • NPCs and AI (Manni Arora): NPC spawning, target creation, and pathfinding using grid marching.
+    </p>
+  </section>
+  </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p> 2025 Shubham Sharma. All rights reserved.</p>
+        </div>
+    </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

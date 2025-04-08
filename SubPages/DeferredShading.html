@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shading Schemes Comparison - Shubham Sharma</title>
+  <meta name="description" content="Shading Schemes Comparison project by Shubham Sharma">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="project-detail-page">
+
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="header-title">
+          <h1>Shubham Sharma</h1>
+          <p>Graphics Engineer</p>
+        </div>
+        <div class="social-links">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="resume-btn">Resume <i class="fas fa-download"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container container-top">
+
+    <!-- Back Button -->
+    <a href="index.html#DeferredShading" class="back-button">
+      <i class="fas fa-chevron-left"></i> Go Back
+    </a>
+    
+    <!-- Project Header -->
+    <div class="project-header">
+      <h2>Shading Schemes Comparison</h2>
+      <img src="../images/Projects/shading-schemes-comparison.png" alt="Shading Schemes Comparison" class="project-banner">
+    </div>
+    
+
+    <!-- Project Info Grid -->
+    <div class="project-detail-grid">
+      <!-- Project Info Section -->
+      <div class="detail-card">
+        <h3>Project Info</h3>
+        <div class="info-item">
+          <i class="fas fa-code"></i>
+          <p>OpenGL, C++</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Introduction Section -->
+    <section class="project-section">
+      <h3>Overview</h3>
+      <p>This project compares the performance of Forward, Forward+ clustered, and Deferred clustered shading schemes.</p>
+      <h4>Shading Schemes</h4>
+      <p class="bullet-paragraph">
+        • Forward: calculates the visible object mesh once and iterates through all lights in the scene.<br>
+        • Forward+: divides the scene into tiled frustum clusters and shades objects only with affecting lights.<br>
+        • Deferred Clustered: uses multiple passes and stores scene information in G-Buffers.
+      </p>
+    </section>
+
+    <section class="project-section">
+      <h3>Performance Analysis</h3>
+      <p>In theory, the expected performance order is: Deferred Clustered > Forward+ > Forward.</p>
+      <h4>Performance Charts</h4>
+      <p>Analysis was done using Google Chrome's built-in performance tools.</p>
+      <div class="comparison-images">
+        <figure>
+          <img src="../images/Projects/performance-chart.png" alt="Performance Chart">
+          <figcaption>Performance comparison of shading schemes.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <h3>Parameters</h3>
+      <p class="bullet-paragraph">
+        • Resolution: 1920x912<br>
+        • Cluster Size: 20x20x20<br>
+        • Light Radius: 1
+      </p>
+    </section>
+   </div>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+        <p> 2025 Shubham Sharma. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

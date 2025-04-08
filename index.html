@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tomas Wallin - Gameplay Programmer</title>
-    <meta name="description" content="Portfolio of Tomas Wallin, a game programmer specializing in systems and gameplay programming.">
+    <title>Shubham Sharma - Graphics Engineer</title>
+    <meta name="description" content="Portfolio of Shubham Sharma">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"> -->
@@ -72,7 +72,7 @@
       <h2 class="section-header">Projects</h2>
       <div class="projects">
         <!-- Project 1 -->
-        <div class="project-card" data-project="PathTracer">
+        <div id="PathTracer" class="project-card" data-project="PathTracer">
           <div class="project-image">
             <img src="images/Projects/565/xyzdragon.png" alt="Path Tracer">
           </div>
@@ -92,9 +92,12 @@
         </div>
   
         <!-- Project 2 -->
-        <div class="project-card" data-project="PathTracer">
+        <div id="DeferredShading" class="project-card" data-project="DeferredShading">
           <div class="project-image">
-            <img src="images/Projects/565/ForwardDeferred.PNG" alt="Bomberbots Game">
+            <!-- <img src="images/Projects/565/ForwardDeferred.PNG" alt="DeferredShading"> -->
+            <video loop autoplay muted playsinline>
+              <source src="images/Projects/565/BlinnSpecular.webm" type="video/webm">
+            </video>
           </div>
           <div class="project-info">
             <div class="project-meta">
@@ -112,9 +115,12 @@
         </div>
   
         <!-- Project 3 (Hidden in the image, add placeholder) -->
-        <div class="project-card" data-project="Flocking">
+        <div id="Flocking" class="project-card" data-project="Flocking">
           <div class="project-image">
-            <img src="images/Projects/565/Flocking.gif" alt="Game Project">
+            <!-- <img src="images/Projects/565/Flocking.gif" alt="Flocking"> -->
+            <video loop autoplay muted playsinline>
+              <source src="images/Projects/565/Flocking.webm" type="video/webm">
+            </video>
           </div>
           <div class="project-info">
             <div class="project-meta">
@@ -131,9 +137,12 @@
           </div>
         </div>
         
-        <div class="project-card" data-project="Flocking">
+        <div id="Minecraft" class="project-card" data-project="Minecraft">
           <div class="project-image">
-            <img src="images/Projects/560/perlin-mountains.png" alt="Game Project">
+            <!-- <img src="images/Projects/560/perlin-mountains.png" alt="Minecraft"> -->
+            <video loop autoplay muted playsinline>
+              <source src="images/Projects/560/Shadows2.webm" type="video/webm">
+            </video>
           </div>
           <div class="project-info">
             <div class="project-meta">
@@ -142,7 +151,7 @@
               <div class="meta-item"><i class="fas fa-code"></i> C++, OpenGL</div>
             </div>
             <div class="project-title">
-              <h3>MineCraft</h3>
+              <h3>Minecraft</h3>
               <span class="arrow-icon"><i class="fas fa-chevron-right"></i></span>
             </div>
             <div class="project-subtitle">Gameplay Programmer</div>
@@ -150,9 +159,11 @@
           </div>
         </div>
   
-        <div class="project-card" data-project="Flocking">
+        <div id="CurveEditor" class="project-card" data-project="CurveEditor">
           <div class="project-image">
-            <img src="images/Projects/562/CurveeRotation3.gif" alt="Game Project">
+            <video loop autoplay muted playsinline>
+              <source src="images/Projects/562/CurveeRotation3.webm" type="video/webm">
+            </video>
           </div>
           <div class="project-info">
             <div class="project-meta">
@@ -168,10 +179,32 @@
             <p class="project-description"> An interactive curve editor and Animation Toolkit</p>
           </div>
         </div>
-  
-        <div class="project-card" data-project="Flocking">
+
+        <div id="Kinematics" class="project-card" data-project="Kinematics">
           <div class="project-image">
-            <img src="images/Projects/561/physically-based-shaders-point-lights/Renders/R2_2.JPG" alt="Game Project">
+            <!-- <img src="images/Projects/562/CurveeRotation3.gif" alt="CurveEditor"> -->
+            <video loop autoplay muted playsinline>
+              <source src="images/Projects/562/KineMatics_IK.webm" type="video/webm">
+            </video>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <div class="meta-item"><i class="fas fa-user"></i> 3</div>
+              <div class="meta-item"><i class="far fa-clock"></i> 8 Weeks</div>
+              <div class="meta-item"><i class="fas fa-code"></i> C++ OpenGL</div>
+            </div>
+            <div class="project-title">
+              <h3>Forward and Inverse Kinematics</h3>
+              <span class="arrow-icon"><i class="fas fa-chevron-right"></i></span>
+            </div>
+            <div class="project-subtitle">Gameplay Programmer</div>
+            <p class="project-description"> An interactive Forward Kinematics and Inverse Kinematics editor.</p>
+          </div>
+        </div>
+  
+        <div id="PBR_PointLight" class="project-card" data-project="PBR_PointLight">
+          <div class="project-image">
+            <img src="images/Projects/561/physically-based-shaders-point-lights/Renders/R2_2.JPG" alt="PBR_PointLight">
           </div>
           <div class="project-info">
             <div class="project-meta">
@@ -188,9 +221,9 @@
           </div>
         </div>
   
-        <div class="project-card" data-project="Flocking">
+        <div id="PBR_EnvironmentMaps"class="project-card" data-project="PBR_EnvironmentMaps">
           <div class="project-image">
-            <img src="images/Projects/561/physically-based-shaders-environment-maps/lucy/1.jpg" alt="Game Project">
+            <img src="images/Projects/561/physically-based-shaders-environment-maps/lucy/1.jpg" alt="PBR_EnvironmentMaps">
           </div>
           <div class="project-info">
             <div class="project-meta">

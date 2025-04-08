@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curve Editor Project</title>
+  <meta name="description" content="Curve Editor project">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="project-detail-page">
+
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="header-title">
+          <h1>Curve Editor Project</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container container-top">
+
+    <!-- Back Button -->
+    <a href="../index.html#CurveEditor" class="back-button">
+      <i class="fas fa-chevron-left"></i> Go Back
+    </a>
+    
+    <!-- Project Header -->
+    <div class="project-header">
+      <h2>Curve Editor Overview</h2>
+    </div>
+    
+
+    <!-- Project Info Grid -->
+    <div class="project-detail-grid">
+      <!-- Project Info Section -->
+      <div class="detail-card">
+        <h3>Project Info</h3>
+        <div class="info-item">
+          <i class="fas fa-code"></i>
+          <p>C++, OpenGL, Unity</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Introduction Section -->
+    <section class="project-section">
+      <h3>Overview</h3>
+      <p>This project is an interactive curve editor and Unity curve plugin developed using the Animation Toolkit.</p>
+    </section>
+
+    <!-- Features Section -->
+    <section class="project-section">
+      <h3>Features</h3>
+      <h4>Spline Curve</h4>
+      <p class="bullet-paragraph">
+        • Create and edit different types of spline curves using the GUI.<br>
+        • Interpolation methods include Linear, Bernstein, Castlejau, Matrix, Hermite, and B-Splines.<br>
+        • Toggle display of control points and animate a point along the curve.
+      </p>
+      <h4>Rotation</h4>
+      <p class="bullet-paragraph">
+        • Animate the orientation of models using Euler angle splines and quaternion splines.<br>
+        • Interpolation methods include linear and cubic interpolation for Euler angle splines and spherical linear (Slerp) and spherical cubic (Scubic) interpolation for quaternion splines.
+      </p>
+    </section>
+
+    <!-- Implementation Section -->
+    <section class="project-section">
+      <h3>Implementation</h3>
+      <p class="bullet-paragraph">
+        • Implemented spline curves that can interpolate 3D vector key points.<br>
+        • Computed control points based on the spline curve's keys and implemented curve interpolation functions.<br>
+        • Used keyframes to specify changes in the state of an object over time.
+      </p>
+    </section>
+  </div>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+        <p> 2025. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
