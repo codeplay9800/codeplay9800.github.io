@@ -16,7 +16,14 @@
     <div class="container">
       <div class="header-content">
         <div class="header-title">
-          <h1>Boid Flocking Project</h1>
+          <h1>Shubham Sharma</h1>
+          <p>Graphics Engineer</p>
+        </div>
+        <div class="social-links">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="resume-btn">Resume <i class="fas fa-download"></i></a>
         </div>
       </div>
     </div>
@@ -32,6 +39,11 @@
     <!-- Project Header -->
     <div class="project-header">
       <h2>Boid Flocking Simulation</h2>
+      <div alt="Minecraft Project" class="project-banner-video">
+        <video loop autoplay muted playsinline>
+          <source src="../images/Projects/565/Flocking2_5s.webm" type="video/webm">
+        </video>
+      </div>
     </div>
     
 
@@ -42,7 +54,11 @@
         <h3>Project Info</h3>
         <div class="info-item">
           <i class="fas fa-code"></i>
-          <p>C++, OpenGL</p>
+          <p>CUDA C++</p>
+        </div>
+        <div class="info-item">
+          <a href="https://github.com/codeplay9800/Project3-CUDA-Path-Tracer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <p><a href="https://github.com/codeplay9800/Project1-CUDA-Flocking" class="unstyled-link">Github Link</a></p>
         </div>
       </div>
     </div>
@@ -61,6 +77,18 @@
         • Boids try to keep a small distance away from other objects (separation).<br>
         • Boids try to match velocity with near boids (alignment).
       </p>
+      <div class="comparison-images">
+        <figure>
+          <img src="../images/Projects/565/Flocking/Boids1_Scattered.png" alt="Depth Of Field">
+          <figcaption>Simulation Begins: Early on in execution the boids are scattered randomly throughout the space</figcaption>
+        </figure>
+      </div>
+      <div class="comparison-images">
+        <figure>
+          <img src="../images/Projects/565/Flocking/Boids1_CLoser.png" alt="Depth Of Field">
+          <figcaption>Simulation Continues: Boids begin to travel in flocks with their neighbors forming groups</figcaption>
+        </figure>
+      </div>
     </section>
 
     <!-- Implementations Section -->
@@ -78,7 +106,17 @@
       <p class="bullet-paragraph">
         • Optimizing the uniform grid approach by storing the index of each boid's position and velocity in the cell array.
       </p>
+      <p>FPS is utilized as the essential measurement of execution investigation. Edge are uncapped (v-sync off), which implies the reproduction is running at its maximum value.</p>
+      <div class="comparison-images">
+        <figure>
+          <img src="../images/Projects/565/Flocking/Perf_comp1.png" alt="Depth Of Field">
+          <figcaption>Performance Comparison: NAIVE vs UNIFORM_GRID vs COHERENT_GRID</figcaption>
+        </figure>
+      </div>
     </section>
+    
+    <h4>Checkout GitHub Repository For More Information!</h4>
+    <h4><a href="https://github.com/codeplay9800/Project3-CUDA-Path-Tracer">Github Link</a></h4>
   </div>
 
   <!-- Footer -->
