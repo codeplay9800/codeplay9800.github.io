@@ -607,7 +607,6 @@
   /* Fix for Go Back button being hidden by header */
   .back-button {
     position: relative;
-    z-index: 1001; /* Higher z-index than header (1000) to appear above it */
     display: inline-block;
     margin-top: 80px; /* More space between header and back button */
     margin-bottom: 15px;
