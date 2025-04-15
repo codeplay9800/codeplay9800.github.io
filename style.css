@@ -183,6 +183,7 @@
       /* border-radius: 8px; */
       width: 100%;
       height: 100%;
+      z-index: 1; /* Ensure it's above background but below header */
   }
 
   .profile-image img {
@@ -201,7 +202,12 @@
     height: 100%;
     z-index: 2;
     pointer-events: all; /* Ensure interactions work */
-}
+  }
+
+  /* Fix for header overlap with hero section */
+  main {
+    padding-top: 72px; /* Ensure main content starts below the fixed header */
+  }
   
   .hero-about {
     flex: 1;
@@ -598,17 +604,20 @@
     to { opacity: 1; }
   }
   
-  /* Updated Back Button Styling to match reference image and fix position */
+  /* Fix for Go Back button being hidden by header */
   .back-button {
-    display: inline-flex;
-    align-items: center;
-    color: var(--accent-pink);
+    position: relative;
+    z-index: 1001; /* Higher z-index than header (1000) to appear above it */
+    display: inline-block;
+    margin-top: 80px; /* More space between header and back button */
+    margin-bottom: 15px;
+    padding: 10px 0; /* Extra padding for easier tapping */
+    font-weight: 500; /* Make it more visible */
+    color: var(--accent-pink, #f8bbd0); /* Ensure color is set even if CSS var is missing */
     text-decoration: none;
     margin: 2rem 0;
     font-size: 1.2rem;
     transition: transform 0.3s ease;
-    position: relative;
-    top: 0;
   }
   
   .back-button:hover {
@@ -770,8 +779,10 @@
     }
     
     .profile-image {
-      height: 50vh !important;
+      height: auto !important; /* Allow natural height */
       min-height: 300px;
+      width: 100%; /* Ensure full width */
+      object-fit: cover; /* Maintain aspect ratio */
     }
     
     .hero-about {
@@ -779,7 +790,7 @@
     }
     
     main {
-      padding-top: 60px !important;
+      padding-top: 80px !important; /* Increased padding-top for mobile */
     }
     
     header .container {
@@ -813,6 +824,23 @@
     .project-detail-grid {
       grid-template-columns: 1fr;
     }
+
+    /* Ensure back button is visible on mobile */
+    .back-button {
+      margin-top: 100px; /* Significantly increase margin on mobile */
+      display: block; /* Full width for easier tapping */
+      width: fit-content; /* Prevent it from taking full width */
+    }
+    
+    /* Fix for project detail page container */
+    .container-top {
+      padding-top: 100px; /* Increased top padding for mobile */
+    }
+    
+    /* Add more space for project-detail-page */
+    .project-detail-page .back-button {
+      margin-top: 120px; /* Even more space for project pages */
+    }
   }
   
   @media (max-width: 600px) {
@@ -833,9 +861,21 @@
     }
   }
 
-  /* @media (max-width: 480px) {
+  @media (max-width: 480px) {
     body {
-      padding-top: 120px !important;
+      padding-top: 0 !important; /* Remove body padding as we're using main padding */
+    }
+    
+    main {
+      padding-top: 120px !important; /* Further increased for smaller screens */
+    }
+
+     /* Additional space for back button on smaller screens */
+    .back-button {
+      margin-top: 140px; /* Even more space on smaller screens */
+      display: block; /* Full width for easy tapping */
+      padding: 15px 0; /* More padding for easier tapping */
+      font-size: 1.1rem; /* Larger font size */
     }
     
     .hero-wrapper {
@@ -843,7 +883,7 @@
     }
     
     .profile-image {
-      height: 40vh !important;
+      height: auto !important; /* Allow natural height */
       min-height: 250px;
     }
     
@@ -858,4 +898,20 @@
       margin: 2rem 0 1.5rem !important;
       font-size: 2rem !important;
     }
-  } */
+  
+    /* Project detail page specific fixes */
+    .project-detail-page .container-top {
+      padding-top: 100px; /* More space at the top */
+    }
+    
+    /* Fix specifically for iPhone with notch */
+    @supports (padding-top: env(safe-area-inset-top)) {
+      .back-button {
+        margin-top: calc(140px + env(safe-area-inset-top)); /* Account for the notch */
+      }
+      
+      .project-detail-page .container-top {
+        padding-top: calc(100px + env(safe-area-inset-top));
+      }
+    }
+  }
