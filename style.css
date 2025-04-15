@@ -833,7 +833,7 @@
     }
   }
 
-  @media (max-width: 480px) {
+  /* @media (max-width: 480px) {
     body {
       padding-top: 120px !important;
     }
@@ -858,4 +858,4 @@
       margin: 2rem 0 1.5rem !important;
       font-size: 2rem !important;
     }
-  }
+  } */
