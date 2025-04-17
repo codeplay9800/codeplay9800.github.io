@@ -13,16 +13,16 @@ document.addEventListener('DOMContentLoaded', function() {
       const projectId = this.getAttribute('data-project');
       
       // Only handle the slide transition for the Bug Shooter project for now
-      if (projectId === 'PathTracer') {
-        // Start transition animation
-        pageTransition.classList.add('slide-in');
-        card.classList.add('slide-out');
+      // if (projectId === 'PathTracer') {
+      //   // Start transition animation
+      //   pageTransition.classList.add('slide-in');
+      //   card.classList.add('slide-out');
         
-        // After animation completes, navigate to the project detail page
-        setTimeout(() => {
-          window.location.href = 'SubPages/PathTracer.html';
-        }, 500);
-      }
+      //   // After animation completes, navigate to the project detail page
+      //   setTimeout(() => {
+      //     window.location.href = 'SubPages/PathTracer.html';
+      //   }, 500);
+      // }
 
       // if (projectId === 'PathTracer') {
       //   // Start transition animation
@@ -135,15 +135,15 @@ document.addEventListener('DOMContentLoaded', function() {
   // }
   const projectIds = ['PathTracer', 'CurveEditor', 'DeferredShading', 'Minecraft', 'Flocking', 'Kinematics', 'PBR_PointLight', 'PBR_EnvironmentMaps'];
 
-  // Handle back navigation with animation if coming from project page
-  if (projectIds.some(id => document.referrer.includes(`SubPages/${id}.html`))) {
-    pageTransition.classList.add('slide-out');
-    setTimeout(() => {
-      pageTransition.classList.remove('slide-out');
-      // const projectId = projectIds.find(id => document.referrer.includes(`SubPages/${id}.html`));
-      // window.location.href = `index.html#${projectId}`;
-    }, 500);
-  }
+  // // Handle back navigation with animation if coming from project page
+  // if (projectIds.some(id => document.referrer.includes(`SubPages/${id}.html`))) {
+  //   pageTransition.classList.add('slide-out');
+  //   setTimeout(() => {
+  //     pageTransition.classList.remove('slide-out');
+  //     // const projectId = projectIds.find(id => document.referrer.includes(`SubPages/${id}.html`));
+  //     // window.location.href = `index.html#${projectId}`;
+  //   }, 500);
+  // }
 
   // Smooth scrolling for navigation links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
